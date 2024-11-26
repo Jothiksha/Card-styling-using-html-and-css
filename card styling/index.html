@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nykaa Cards</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #f0f4f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      flex-wrap: wrap;
+    }
+    .cards-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      width: 100%;
+      max-width: 1200px;
+    }
+    .card {
+      background-color: #ffffff;
+      border: 2px solid #f0f4f8;
+      border-radius: 16px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    }
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-bottom: 2px solid #f0f4f8;
+    }
+    .card-content {
+      padding: 15px;
+      color: #4b0082;
+      text-align: center;
+    }
+    /* Styles for each card */
+    .card1 h2 { 
+        color: #d63384; 
+        letter-spacing: 1px; 
+        word-spacing: 2px; 
+    }
+    .card1 p { 
+        text-align: justify; 
+        text-indent: 10px; 
+        line-height: 1.6; 
+    }
+
+    .card2 h2 { 
+        text-transform: uppercase; 
+        color: #333; 
+    }
+    .card2 p { 
+        color: #555; 
+        letter-spacing: 2px; 
+    }
+
+    .card3 h2 { 
+        text-align: left; 
+        text-decoration: underline; 
+    }
+    .card3 p { 
+        text-align: left; 
+        color: #333; 
+    }
+
+    .card4 h2 { 
+        color: #ff4500; 
+        letter-spacing: 3px; 
+    }
+    .card4 p { 
+        word-spacing: 3px; 
+        line-height: 1.8; 
+    }
+
+    .card5 h2 { 
+        color: #2e8b57; 
+        text-transform: capitalize; 
+    }
+    .card5 p { 
+        letter-spacing: 1.5px; 
+        text-indent: 10px; 
+    }
+
+    .card6 h2 { 
+        text-shadow: 2px 2px #fdf5e6; 
+        color: #800080; 
+    }
+    .card6 p { 
+        line-height: 1.4; 
+    }
+
+    .card7 h2 { 
+        text-decoration: line-through; 
+        color: #d2691e; 
+    }
+    .card7 p { 
+        text-decoration: overline; 
+        text-indent: 5px; 
+    }
+
+    .card8 h2 { 
+        color: #ff6347; 
+        text-transform: uppercase; 
+        letter-spacing: 1px; 
+    }
+    .card8 p { 
+        word-spacing: 4px; 
+        line-height: 1.5; 
+    }
+
+    .card9 h2 { 
+        text-align: right; 
+        color: #4682b4; 
+    }
+    .card9 p { 
+        text-align: right; l
+        ine-height: 1.6; 
+    }
+
+    .card10 h2 { 
+        text-shadow: 3px 3px 3px rgba(0,0,0,0.2); 
+        color: #9932cc; 
+    }
+    .card10 p { 
+        letter-spacing: 1px; 
+        line-height: 1.5; 
+        text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="cards-container">
+    <div class="card card1">
+      <img src="C:\Users\JOTHIKSHA\Downloads\collection-beauty-products-with-copy-space.jpg" alt="Card 1 Image">
+      <div class="card-content">
+        <h2>Nykaa Pure</h2>
+        <p>Nykaa's purest skincare products are organic and effective, enhancing your skin's natural beauty.</p>
+      </div>
+    </div>
+
+    <div class="card card2">
+      <img src="C:\Users\JOTHIKSHA\Downloads\collection-beauty-products-with-copy-space.jpg" alt="Card 2 Image">
+      <div class="card-content">
+        <h2>Skincare</h2>
+        <p>Explore Nykaa’s exclusive range of skincare essentials crafted for purity and simplicity.</p>
+      </div>
+    </div>
+
+    <div class="card card3">
+      <img src="C:\Users\JOTHIKSHA\Downloads\collection-beauty-products-with-copy-space.jpg" alt="Card 3 Image">
+      <div class="card-content">
+        <h2>Natural Glow</h2>
+        <p>Achieve a radiant glow with Nykaa’s natural and organic products.</p>
+      </div>
+    </div>
+
+    <div class="card card4">
+      <img src="C:\Users\JOTHIKSHA\Downloads\collection-beauty-products-with-copy-space.jpg" alt="Card 4 Image">
+      <div class="card-content">
+        <h2>Beauty Reimagined</h2>
+        <p>Nykaa redefines beauty standards by focusing on health and vitality.</p>
+      </div>
+    </div>
+
+    <div class="card card5">
+      <img src="C:\Users\JOTHIKSHA\Downloads\collection-beauty-products-with-copy-space.jpg" alt="Card 5 Image">
+      <div class="card-content">
+        <h2>Organic Essentials</h2>
+        <p>Our products are crafted with organic ingredients for healthier skin.</p>
+      </div>
+    </div>
+
+    <div class="card card6">
+      <img src="C:\Users\JOTHIKSHA\Downloads\collection-beauty-products-with-copy-space.jpg" alt="Card 6 Image">
+      <div class="card-content">
+        <h2>Luxury Skincare</h2>
+        <p>Experience the luxury of organic skincare with Nykaa’s top-rated products.</p>
+      </div>
+    </div>
+
+    <div class="card card7">
+      <img src="C:\Users\JOTHIKSHA\Downloads\collection-beauty-products-with-copy-space.jpg" alt="Card 7 Image">
+      <div class="card-content">
+        <h2>Essential Oils</h2>
+        <p>Find the best essential oils to rejuvenate and refresh your skin.</p>
+      </div>
+    </div>
+
+    <div class="card card8">
+      <img src="C:\Users\JOTHIKSHA\Downloads\collection-beauty-products-with-copy-space.jpg" alt="Card 8 Image">
+      <div class="card-content">
+        <h2>Beauty Science</h2>
+        <p>Unlock the science behind beautiful skin with Nykaa’s advanced products.</p>
+      </div>
+    </div>
+
+    <div class="card card9">
+      <img src="C:\Users\JOTHIKSHA\Downloads\collection-beauty-products-with-copy-space.jpg" alt="Card 9 Image">
+      <div class="card-content">
+        <h2>Skin Care Routine</h2>
+        <p>Establish the perfect skincare routine with Nykaa’s exclusive line.</p>
+      </div>
+    </div>
+
+    <div class="card card10">
+      <img src="C:\Users\JOTHIKSHA\Downloads\collection-beauty-products-with-copy-space.jpg" alt="Card 10 Image">
+      <div class="card-content">
+        <h2>Botanical Bliss</h2>
+        <p>Embrace nature’s gifts with our botanically inspired skincare line.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
